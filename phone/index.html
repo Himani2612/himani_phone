@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>
+        Phone
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1><center>Registration</center></h1>
+    <div class="container">
+
+        <div class="search-container">
+            
+              <input type="text" placeholder="Search by your firstname.." name="search" id="search1">
+              <button type="submit" onclick="myFunction()">Submit</button>
+            
+          </div>
+   
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div class="form-group">
+                        <label>First Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="firstname" id="firstname" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name*</label>
+                        <input type="text" name="lastname" id="lastname" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Office Phone</label>
+                        <input type="text" name="officephone" id="officephone" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Residential Phone</label>
+                        <input type="text" name="resphone" id="resphone" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>City</label>
+                        <input type="text" name="city" id="city" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Country</label>
+                        <input type="text" name="country" id="country" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Street Address</label>
+                        <input type="text" name="street" id="street" class="form-control">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit" class="btn btn-primary">
+                    </div>
+                </form>
+                <table>
+                   
+            <td>
+                <table class="table table-striped" id="employeeList" >
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Office Phone</th>
+                            <th>Residential Phone</th>
+                            <th>City</th>
+                            <th>Country</th>
+                            <th>Street Address</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
